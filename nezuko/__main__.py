@@ -61,7 +61,7 @@ async def start_bot():
             bot_modules += "|{:<15}".format(i)
         j += 1
     print("+===============================================================+")
-    print("|                              Nezuko                           |")
+    print("|                           Jim Hopper                          |")
     print("+===============+===============+===============+===============+")
     print(bot_modules)
     print("+===============+===============+===============+===============+")
@@ -98,15 +98,15 @@ home_keyboard_pm = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(text="Commands ❓", callback_data="bot_commands"),
-            InlineKeyboardButton(
-                text="Repo ❤️",
-                url="https://github.com/rozari0/NezukoBot",
-            ),
         ],
         [
             InlineKeyboardButton(
-                text="System Stats 🖥",
-                callback_data="stats_callback",
+                text="Imagine Music Bot 🎧",
+                url=f"http://t.me/ImagineMusicBot",
+            ),
+            InlineKeyboardButton(
+                text="Official Group Chat"
+                url=f"http://t.me/ImagineItsReal",
             ),
         ],
         [
@@ -132,15 +132,11 @@ keyboard = InlineKeyboardMarkup(
                 text="Help ❓",
                 url=f"t.me/{BOT_USERNAME}?start=help",
             ),
-            InlineKeyboardButton(
-                text="Repo 🛠",
-                url="https://github.com/rozari0/NezukoBot",
-            ),
         ],
         [
             InlineKeyboardButton(
-                text="System Stats 💻",
-                callback_data="stats_callback",
+                text="Official Group Chat 💻",
+                url=f"https://t.me/ImagineItsReal",
             ),
         ],
     ]
